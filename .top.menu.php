@@ -1,0 +1,60 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Продукция", 
+		"/catalog/", 
+		Array(), 
+		Array("FULL_DROPDOWN"=>"Y"), 
+		"" 
+	),
+	Array(
+		"Услуги", 
+		"/services/", 
+		Array(), 
+		Array("FULL_DROPDOWN"=>"Y"), 
+		"" 
+	),
+	/*Array(
+		"Проекты", 
+		"/projects/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Наши работы", 
+		"/our-works/", 
+		Array(), 
+		Array(), 
+		"" 
+	),*/
+	Array(
+		"Как купить", 
+		"/how-to-buy/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"О компании", 
+		"/company/", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	/*Array(
+		"Пресс-центр", 
+		"/news/", 
+		Array(), 
+		Array(), 
+		"" 
+	),*/
+	Array(
+		"Контакты", 
+		"/contacts/", 
+		Array(), 
+		Array(), 
+		"" 
+	)
+);
+?>

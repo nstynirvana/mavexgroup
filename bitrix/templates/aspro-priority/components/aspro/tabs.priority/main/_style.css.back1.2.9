@@ -1,0 +1,33 @@
+.tabs_ajax__top-block {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+}
+.tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block {
+    position: absolute;
+    margin-left: 0;
+    margin-right: 0;
+    display: none;
+}
+
+@media(max-width: 767px) {
+    .tabs_ajax__top-block {flex-direction: column;}
+    .item-views.front .tabs_ajax .tabs_ajax__top-block .show_all {order: -1;margin-bottom: 14px;margin-left: 3px;margin-top: 8px;}
+    .body.index .tabs_ajax .tabs_ajax__top-block h2 {margin-bottom: 16px;font-size: 24px;line-height: 24px;}
+    .tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block {
+        position: relative;
+        left: 0 !important;
+        right: 0 !important;
+        display: block;
+        margin: 0 0 0px -16px;
+        max-width: calc(100% + 32px);
+    }
+    .tabs_ajax__head-block .item-link span {font-size: 13px;line-height: 21px;text-transform: uppercase;color: #666;}
+    .tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block .item-link.active span {color: #666;}
+    .tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block .mCustomScrollBox,
+    .tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block .mCSB_container {padding-bottom: 20px;}
+    .tabs_ajax .tabs_ajax__top-block .tabs_ajax__head-block .item-link.active span:after {bottom: -26px;}
+    .body.index .tabs_ajax__top-block h2 {margin-bottom: 31px;}
+    .tabs_ajax__head-block .scroll-tabs-wrapper {border-bottom: 1px solid #EFF1F5;padding-bottom: 9px;margin-bottom: -10px;}
+}

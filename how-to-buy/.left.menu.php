@@ -1,0 +1,41 @@
+<?
+$aMenuLinks = Array(
+	Array(
+		"Гарантия", 
+		"guarantee.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	/*
+	Array(
+		"Доставка", 
+		"delivery.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),*/
+	Array(
+		"Оплата", 
+		"pay.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	/*
+	Array(
+		"Для Юр. лиц", 
+		"legal.php", 
+		Array(), 
+		Array(), 
+		"" 
+	),
+	Array(
+		"Для Физ. лиц", 
+		"individuals.php", 
+		Array(), 
+		Array(), 
+		"" 
+	)*/
+);
+?>

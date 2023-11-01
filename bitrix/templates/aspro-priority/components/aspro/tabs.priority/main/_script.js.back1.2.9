@@ -1,0 +1,23 @@
+$(document).ready(function(){
+	var tabs = $('.tabs_ajax__top-block .tabs');
+	InitScrollBar(tabs);
+
+	if(tabs.length) {
+		BX.addCustomEvent('onWindowResize', function(eventdata){
+			try{
+				if(window.matchMedia('(min-width: 768px)').matches) {
+					var title_width = $('.tabs_ajax__top-block h2').outerWidth(true);
+					var show_all_width = $('.tabs_ajax__top-block .show_all').outerWidth(true);
+		
+					tabs.css({
+						left: title_width,
+						right: show_all_width,
+					});
+					tabs.show();
+				}
+				
+			}
+			catch(e){console.log(e);}
+		});
+	}
+});

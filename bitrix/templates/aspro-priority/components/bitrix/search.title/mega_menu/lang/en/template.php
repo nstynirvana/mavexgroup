@@ -1,0 +1,3 @@
+<?
+$MESS['CT_BST_SEARCH_BUTTON_TITLE2_MEGA'] = "Поиск";
+?>

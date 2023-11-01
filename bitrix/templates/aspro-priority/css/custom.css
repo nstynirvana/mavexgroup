@@ -1,0 +1,15 @@
+/* CSS kod pishite v etom faile, chotobi pri ustanovke obnovlenii ne bilo problem  */
+/* --------------------------------------- */
+/* Here you can put custom css rules for your site */
+
+ul li a[href=""]{
+	pointer-events: none;
+}
+.item-views.services-items.type_1 .items .item>.wrap>.wrap{
+	border-bottom: 1px solid #eff1f5;;
+}
+a[href="/services/"]{
+	pointer-events: none!important;
+	color: #888!important;
+	font-weight: normal!important;
+}

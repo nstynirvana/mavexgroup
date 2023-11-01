@@ -1,0 +1,53 @@
+$(document).ready(function(){
+	var index = $('.tabs_ajax .head-block .item-link.active').index();
+	setBasketItemsClasses();
+
+	//$('.catalog.item-views.table .item .props').mCustomScrollbar();
+
+
+	setTimeout(function(){
+		$('.item-block.active .catalog.item-views.table .item .delivery .tooltip').each(function(){
+			var _this = $(this),
+				textWidth = parseInt(_this.find('>span').width()),
+				paddingLeftRight = parseInt(_this.css('padding-left')),
+				tooltipWidth = textWidth + paddingLeftRight*2 + 2;
+
+			_this.outerWidth(tooltipWidth);
+			_this.css('left', -tooltipWidth/2 + 8);
+		});
+	}, 300);
+
+	$(document).on('mouseenter', '.item .delivery', function(){
+		var _this = $(this),
+			$tooltip = _this.find('.tooltip'),
+			tooltipWidth = $tooltip.outerWidth(),
+			tooltipffsetLeft = $tooltip.offset().left,
+			sliderWidth = _this.closest('.flex-viewport').outerWidth();
+
+		if(tooltipWidth + tooltipffsetLeft > sliderWidth){
+			$tooltip.addClass('rightpos');
+		}
+
+	});
+
+	setTimeout(function(){
+		$('.catalog.item-views.table .item .delivery .tooltip').each(function(){
+			var _this = $(this),
+				textWidth = parseInt(_this.find('>span').width()),
+				paddingLeftRight = parseInt(_this.css('padding-left')),
+				tooltipWidth = textWidth + paddingLeftRight*2 + 2;
+
+			_this.outerWidth(tooltipWidth);
+			_this.css('left', -tooltipWidth/2 + 8);
+		});
+	}, 300);
+
+	$(document).on('mouseleave', '.item .delivery', function(){
+		var _this = $(this),
+			$tooltip = _this.find('.tooltip');
+		setTimeout(function(){
+			$tooltip.removeClass('rightpos');
+			$tooltip.removeClass('leftpos');
+		}, 100);
+	});
+});
