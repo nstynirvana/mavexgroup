@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="d1c31e2d-8eb1-4b64-b1f0-647800d047b9" name="mavex" url="http://mavexgroup.ru">
+        <fileTransfer rootFolder="/mavexgroup/public_html" host="mavexgroup.ru" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

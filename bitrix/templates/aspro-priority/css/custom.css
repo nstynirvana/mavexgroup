@@ -3,13 +3,35 @@
 /* Here you can put custom css rules for your site */
 
 ul li a[href=""]{
-	pointer-events: none;
+	/*pointer-events: none;*/
 }
 .item-views.services-items.type_1 .items .item>.wrap>.wrap{
 	border-bottom: 1px solid #eff1f5;;
 }
 a[href="/services/"]{
-	pointer-events: none!important;
-	color: #888!important;
-	font-weight: normal!important;
+	/*pointer-events: none!important;*/
+	/*color: #888!important;*/
+	/*font-weight: normal!important;*/
+	cursor: pointer!important;
 }
+
+.mega-menu table td .wrap>a {
+	cursor: pointer!important;
+}
+
+a[href="/how-to-buy/"]{
+	pointer-events: none!important;
+}
+
+a[href="/company/"]{
+	pointer-events: none!important;
+}
+
+.mega-menu table td.full_dropdown .dropdown-menu>li>.menu_body a.dark-color{
+	pointer-events: none!important;
+	color: #333!important;
+}
+/*a.disabled {*/
+/*	text-decoration: none;*/
+/*	cursor: default;*/
+/*}*/

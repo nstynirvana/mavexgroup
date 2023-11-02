@@ -142,16 +142,16 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
 		<div class="maxwidth-theme">
 			<div class="row">
 				<div class="link_block col-md-6 col-sm-6 pull-right">
-					<?if($bPrintButton):?>
+					<?/*if($bPrintButton):?>
 						<div class="pull-right">
 							<?=CPriority::ShowPrintLink();?>
 						</div>
-					<?endif?>
+					<?endif*/?>
 					<div class="pull-right">
 						<div class="confidentiality">
 							<?$APPLICATION->IncludeFile(SITE_DIR."include/footer/confidentiality.php", Array(), Array(
 									"MODE" => "php",
-									"NAME" => "Ñonfidentiality",
+									"NAME" => "ï¿½onfidentiality",
 									"TEMPLATE" => "include_area.php",
 								)
 							);?>
