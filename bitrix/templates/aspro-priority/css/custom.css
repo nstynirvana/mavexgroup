@@ -2,21 +2,15 @@
 /* --------------------------------------- */
 /* Here you can put custom css rules for your site */
 
-ul li a[href=""]{
-	/*pointer-events: none;*/
-}
+/*ul li a[href=""]{*/
+/*	pointer-events: none;*/
+/*}*/
 .item-views.services-items.type_1 .items .item>.wrap>.wrap{
 	border-bottom: 1px solid #eff1f5;;
 }
-a[href="/services/"]{
-	/*pointer-events: none!important;*/
-	/*color: #888!important;*/
-	/*font-weight: normal!important;*/
-	cursor: pointer!important;
-}
 
-.mega-menu table td .wrap>a {
-	cursor: pointer!important;
+.mega-menu table td .wrap>a[href="/services/"] {
+	pointer-events: none!important;
 }
 
 a[href="/how-to-buy/"]{
@@ -27,11 +21,98 @@ a[href="/company/"]{
 	pointer-events: none!important;
 }
 
+a[href="/services/"]{
+	pointer-events: none!important;
+}
+
 .mega-menu table td.full_dropdown .dropdown-menu>li>.menu_body a.dark-color{
 	pointer-events: none!important;
 	color: #333!important;
 }
-/*a.disabled {*/
-/*	text-decoration: none;*/
-/*	cursor: default;*/
-/*}*/
+
+.item_contact .title a {
+	pointer-events: none!important;
+
+	text-decoration: none;
+}
+
+.panel-collapse_contact {
+	cursor: default!important;
+}
+.back-url.url-block.font_upper {
+	display: none;
+}
+.print-link {
+	display: none;
+}
+#footer {
+	padding: 50px 0 26px!important;
+}
+
+.footer-v1 .footer_top {
+	padding-bottom: 0;
+}
+
+.footer-v1 .footer_middle {
+margin-bottom: 0;
+}
+
+.item_contact {
+	display: flex;
+	flex-direction: column;
+	margin: 10px 0 0 0!important;
+}
+
+.footer__contacts {
+	width: 600px;
+}
+
+p.item_contact-desc {
+	margin: 5px 0 0!important;
+	font-size: 0.867em;
+}
+
+.footer-v1 .contact-block {
+	float: right;
+}
+
+.footer__contacts {
+	cursor: pointer;
+}
+
+.right-menu-icon_contact {
+	transition: all 0.3s ease;
+}
+
+.right-menu-icon_contact.active {
+	transform: rotate(180deg);
+}
+
+.collapse {
+	display: none;
+}
+
+@media (max-width: 991px) {
+	.footer-v1 .contact-block {
+		float: none;
+	}
+}
+
+@media (max-width: 775px) {
+
+	.bottom-menu.second .item {
+		position: initial!important;
+	}
+	.footer__contacts {
+		width: auto;
+	}
+
+	div.col-md-2.col-sm-3.footer__contacts {
+		padding-right: 0;
+	}
+
+	.item_contact {
+       padding-bottom: 0!important;
+		padding-top: 0!important;
+	}
+}

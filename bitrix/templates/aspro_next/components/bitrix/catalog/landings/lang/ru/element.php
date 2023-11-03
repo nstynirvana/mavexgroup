@@ -107,7 +107,7 @@ $MESS["SECT_SORT_SHOWS"] = "По популярности";
 	$MESS["BEST_TITLE"] = "Лучшие предложения";
 
 	$MESS['S_ASK_QUESTION'] = 'Задать вопрос';
-	$MESS['S_ORDER_SERVISE'] = 'Заказать услугу';
+	$MESS['S_ORDER_SERVISE'] = 'Заказать расчет';
 	$MESS['POPULAR_CATEGORYS'] = 'Популярные категории';
 
 	$MESS["SECT_ORDER_desc"] = " (убывание)";

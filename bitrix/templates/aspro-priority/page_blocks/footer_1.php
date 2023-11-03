@@ -26,6 +26,7 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
 						);?>
 					</div>
 				</div>
+                <?/*
 				<div class="col-md-3 col-sm-3">
 					<div class="second_bottom_menu">
 						<?$APPLICATION->IncludeComponent("bitrix:menu", "bottom", array(
@@ -63,8 +64,8 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
 							false
 						);?>
 					</div>
-				</div>
-				<div class="col-md-2 col-sm-3">
+				</div>*/?>
+				<div class="col-md-2 col-sm-3 footer__contacts">
 					<div class="fourth_bottom_menu">
 						<?$APPLICATION->IncludeComponent("bitrix:menu", "bottom2", array(
 							"ROOT_MENU_TYPE" => "bottom4",

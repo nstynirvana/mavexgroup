@@ -92,5 +92,5 @@ $MESS["PRICE_MATRIX_COUNT"] = "Количество от #QUANTITY_FROM##QUANTIT
 $MESS["PRICE_MATRIX_COUNT_TO"] = "до";
 
 $MESS['S_ASK_QUESTION'] = 'Задать вопрос';
-$MESS['S_ORDER_SERVISE'] = 'Заказать услугу';
+$MESS['S_ORDER_SERVISE'] = 'Заказать расчет';
 ?>

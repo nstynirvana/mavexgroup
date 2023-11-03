@@ -14,6 +14,6 @@ $MESS['T_SERVICES'] = 'Услуги';
 $MESS['T_CHARACTERISTICS'] = 'Характеристики проекта';
 $MESS['T_CLIENTS'] = 'Клиент';
 $MESS['S_ASK_QUESTION'] = 'Задать вопрос';
-$MESS['S_ORDER_SERVISE'] = 'Заказать услугу';
+$MESS['S_ORDER_SERVISE'] = 'Заказать расчет';
 $MESS['S_ORDER_STUDY'] = 'Заказать курс';
 ?>

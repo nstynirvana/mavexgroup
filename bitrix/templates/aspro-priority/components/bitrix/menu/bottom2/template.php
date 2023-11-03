@@ -6,6 +6,8 @@ $colsm = 12;
 ?>
 <?if($arResult):?>
 	<?
+    global $arTheme;
+    $compactFooterMobile = $arTheme['COMPACT_FOOTER_MOBILE']['VALUE'];
 	if(!function_exists("ShowSubItems3")){
 		function ShowSubItems3($arItem){
 			?>
@@ -50,9 +52,32 @@ $colsm = 12;
 							<span><?=$arItem['TEXT']?></span>
 						<?endif;?>
 					</div>
+                    <?if( $compactFooterMobile == "Y" ):?>
+                        <div class="right-menu-icon right-menu-icon_contact"></div>
+                    <?endif;?>
 				</div>
+
 				<?ShowSubItems3($arItem);?>
 			<?endforeach;?>
+            <div class="wrap panel-collapse wrap_compact_mobile panel-collapse_contact">
+                <div class="item item_contact">
+                    <div class="title">
+                        <a href="#">ООО «Мавекс Инжиниринг»</a>
+                    </div>
+                </div>
+                <div class="item item_contact">
+                    <div class="title">
+                        <a href="#">Юридический адрес:</a>
+                    </div>
+                    <p class="item_contact-desc">355011, Ставропольский край, г. Ставрополь, ул. Пирогова, д.102, помещения 318-326</p>
+                </div>
+                <div class="item item_contact" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+                    <div class="title">
+                        <a href="#">ИНН:</a>
+                    </div>
+                    <p class="item_contact-desc" style="margin-top: 0!important;">2635217803</p>
+                </div>
+            </div>
 		</div>
 	</div>
 <?endif;?>
