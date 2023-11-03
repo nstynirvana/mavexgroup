@@ -25,10 +25,10 @@ a[href="/services/"]{
 	pointer-events: none!important;
 }
 
-.mega-menu table td.full_dropdown .dropdown-menu>li>.menu_body a.dark-color{
-	pointer-events: none!important;
-	color: #333!important;
-}
+/*.mega-menu table td.full_dropdown .dropdown-menu>li>.menu_body a.dark-color{*/
+/*	pointer-events: none!important;*/
+/*	color: #333!important;*/
+/*}*/
 
 .item_contact .title a {
 	pointer-events: none!important;
