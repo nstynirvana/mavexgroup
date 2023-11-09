@@ -16,7 +16,6 @@ if(CModule::IncludeModule("aspro.priority"))
 		<?$APPLICATION->ShowMeta("apple-mobile-web-app-status-bar-style");?>
 		<?$APPLICATION->ShowMeta("SKYPE_TOOLBAR");?>
 		<?$APPLICATION->ShowHead();?>
-		<?$APPLICATION->AddHeadString('<meta name="robots" content="noindex, follow"/>', true);?>
 		<?$APPLICATION->AddHeadString('<script>BX.message('.CUtil::PhpToJSObject($MESS, false).')</script>', true);?>
 		<?if(CModule::IncludeModule("aspro.priority")) {CPriority::Start(SITE_ID);}?>
 	</head>
