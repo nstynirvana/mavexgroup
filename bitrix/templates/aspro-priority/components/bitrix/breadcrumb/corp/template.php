@@ -19,20 +19,20 @@ if ($arResult[1]["LINK"] == "/product/") {
 		endif;	
 	endforeach;	
 }
-if ($arResult[1]["LINK"] == "/services/") {
-	$arResult[1]["UF_SHOW_LINK"] = 1;
-	foreach ($arResult as &$arChild):
-		$uf_name = Array("UF_SHOW_LINK");
-		$code = explode("/", $arChild["LINK"]);
-		$code = $code[2];
-		$uf_arresult = CIBlockSection::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => 34, "CODE" => $code), false, $uf_name);
-		if($uf_value = $uf_arresult->GetNext()):
-			if ($uf_value["UF_SHOW_LINK"] == 1) {
-				$arResult[2]["UF_SHOW_LINK"] = 1;
-			}
-		endif;	
-	endforeach;	
-}
+//if ($arResult[1]["LINK"] == "/services/") {
+//	$arResult[1]["UF_SHOW_LINK"] = 1;
+//	foreach ($arResult as &$arChild):
+//		$uf_name = Array("UF_SHOW_LINK");
+//		$code = explode("/", $arChild["LINK"]);
+//		$code = $code[2];
+//		$uf_arresult = CIBlockSection::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => 34, "CODE" => $code), false, $uf_name);
+//		if($uf_value = $uf_arresult->GetNext()):
+//			if ($uf_value["UF_SHOW_LINK"] == 1) {
+//				$arResult[2]["UF_SHOW_LINK"] = 1;
+//			}
+//		endif;
+//	endforeach;
+//}
 
 $position = 1;
 for($index = 0, $itemSize = count($arResult); $index < $itemSize; ++$index){

@@ -96,9 +96,9 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
                             <? endif; */ ?>
                             <div class="col-md-12 col-sm-12">
                                 <div class="subscribe_button">
-                                        <span class="btn" data-event="jqm" data-param-id="subscribe"
-                                              data-param-type="subscribe"
-                                              data-name="subscribe"><?= GetMessage("S_CALLBACK") ?><?= CPriority::showIconSvg(SITE_TEMPLATE_PATH . '/images/include_svg/subscribe.svg') ?></span>
+                                        <span class="btn" data-event="jqm"
+                                              data-param-id="<?= CPriority::getFormID("aspro_priority_callback"); ?>"
+                                              data-name="callback"><?= GetMessage("S_CALLBACK") ?></span>
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12">
