@@ -2,6 +2,7 @@
 if(!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) die();
 $this->setFrameMode(true);
 ?>
+
 <?if($arResult['SECTIONS']):?>
 	<div class="item-views sections type_5_within">
 		<div class="items row list_block">

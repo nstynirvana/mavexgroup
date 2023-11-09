@@ -7,7 +7,7 @@ if($arResult){
 	foreach($arResult as $key=>$arItem)
 	{
 		if(isset($arItem['CHILD']))
-		{	
+		{
 			foreach($arItem['CHILD'] as $key2=>$arItemChild)
 			{
 				$bSectionChildRegion = false;
@@ -115,9 +115,10 @@ if($arResult){
 						$child["UF_SHOW_LINK"] = 1;
 					}
 				endif;
-			endforeach;	
-				
+			endforeach;
+
 		}
 	endforeach;	
+
 
 ?>

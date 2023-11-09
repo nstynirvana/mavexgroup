@@ -77,6 +77,12 @@ $colsm = 12;
                     </div>
                     <p class="item_contact-desc" style="margin-top: 0!important;">2635217803</p>
                 </div>
+                <div class="item item_contact" style="display: flex; flex-direction: row; align-items: center; gap: 5px;">
+                    <div class="title">
+                        <a href="#">ОГРН:</a>
+                    </div>
+                    <p class="item_contact-desc" style="margin-top: 0!important;">1162651055401</p>
+                </div>
             </div>
 		</div>
 	</div>

@@ -28,7 +28,7 @@ $bImagePositionTop = (isset($arTheme['SHOW_CATALOG_SECTIONS_IMAGE']['DEPENDENT_P
 							<?$dropdownClass = (isset($arItem['PARAMS']['FULL_DROPDOWN']) && $arItem['PARAMS']['FULL_DROPDOWN'] == 'Y' ? ' full_dropdown' : ' normal_dropdown');?>
 							<td class="menu-item unvisible<?=$dropdownClass?> <?=($arItem["CHILD"] ? "dropdown" : "")?>  <?=($arItem["SELECTED"] ? "active" : "")?><?=($index == count($arResult) - 1 ? ' last_item' : '')?>">
 								<div class="wrap">
-									<a class="font_xs dark-color<?=($arItem["CHILD"] && $bShowChilds ? " dropdown-toggle" : "")?>" <?if($arItem["LINK"] != "/services/" && $arItem["LINK"] != "/product/"):?>href="<?=$arItem["LINK"]?>" <?endif?>>
+									<a class="font_xs dark-color<?=($arItem["CHILD"] && $bShowChilds ? " dropdown-toggle" : "")?>" <?if($arItem["LINK"] != "/product/"):?>href="<?=$arItem["LINK"]?>" <?endif?>>
 										<span><?=$arItem["TEXT"]?></span>
 									</a>
 									<?if($arItem["CHILD"] && $bShowChilds):?>

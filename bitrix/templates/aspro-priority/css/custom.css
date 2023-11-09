@@ -9,8 +9,9 @@
 	border-bottom: 1px solid #eff1f5;;
 }
 
-.mega-menu table td .wrap>a[href="/services/"] {
-	pointer-events: none!important;
+.mega-menu table td .wrap>a[href="/services/"] span {
+	/*pointer-events: none!important;*/
+	cursor: pointer!important;
 }
 
 a[href="/how-to-buy/"]{
@@ -21,9 +22,9 @@ a[href="/company/"]{
 	pointer-events: none!important;
 }
 
-a[href="/services/"]{
-	pointer-events: none!important;
-}
+/*a[href="/services/"]{*/
+/*	pointer-events: none!important;*/
+/*}*/
 
 /*.mega-menu table td.full_dropdown .dropdown-menu>li>.menu_body a.dark-color{*/
 /*	pointer-events: none!important;*/
@@ -90,6 +91,27 @@ p.item_contact-desc {
 
 .collapse {
 	display: none;
+}
+
+.logo_and_menu-row .callback_wrap {
+	margin: 8px auto 0!important;
+}
+
+.button-call__in-header {
+	padding: 7px 16px 7px!important;
+	color: white!important;
+	background-color: #da2a34!important;
+	border-color: #da2a34!important;
+	border-radius: 6%!important;
+	text-align: center!important;
+}
+
+header.light .logo_and_menu-row .phone a, header.light .logo_and_menu-row .phone .callback-block {
+	color: #fff!important;
+}
+
+header .logo_and_menu-row .phone a, header .logo_and_menu-row .phone .callback-block {
+	pointer-events: none!important;
 }
 
 @media (max-width: 991px) {

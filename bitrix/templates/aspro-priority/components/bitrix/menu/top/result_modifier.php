@@ -123,8 +123,8 @@ if ($arResult[1]["LINK"] == "/services/") {
 			if ($uf_value["UF_SHOW_LINK"] == 1) {
 				$arChild["UF_SHOW_LINK"] = 1;
 			}
-		endif;	
-	endforeach;	
+		endif;
+	endforeach;
 }
 
 ?>
