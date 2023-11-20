@@ -46,7 +46,7 @@ require_once('header_options.php')
                                                     <div><? CPriority::ShowHeaderPhones('mask'); ?></div>
                                                     <? if (CPriority::GetFrontParametrValue('CALLBACK_BUTTON') == "Y"): ?>
                                                         <div class="callback_wrap">
-                                                            <span class="button-call__in-header callback-block animate-load twosmallfont colored"
+                                                            <span class="btn button-call__in-header callback-block animate-load twosmallfont colored"
                                                                   data-event="jqm"
                                                                   data-param-id="<?= CPriority::getFormID("aspro_priority_callback"); ?>"
                                                                   data-name="callback"><?= GetMessage("S_CALLBACK") ?></span>

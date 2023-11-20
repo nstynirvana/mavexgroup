@@ -114,6 +114,19 @@ header .logo_and_menu-row .phone a, header .logo_and_menu-row .phone .callback-b
 	pointer-events: none!important;
 }
 
+.subscribe_button-custom {
+	margin: 0 0 23px;
+}
+
+.subscribe_button-custom span.btn.btn-default {
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+span.btn.button-call__in-header.callback-block.animate-load.twosmallfont.colored {
+	font-size: 0.6667em;
+}
+
 @media (max-width: 991px) {
 	.footer-v1 .contact-block {
 		float: none;

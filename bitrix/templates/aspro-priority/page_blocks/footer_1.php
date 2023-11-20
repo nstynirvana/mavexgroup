@@ -95,8 +95,8 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
                                 </div>
                             <? endif; */ ?>
                             <div class="col-md-12 col-sm-12">
-                                <div class="subscribe_button">
-                                        <span class="btn" data-event="jqm"
+                                <div class="subscribe_button-custom">
+                                        <span class="btn btn-default" data-event="jqm"
                                               data-param-id="<?= CPriority::getFormID("aspro_priority_callback"); ?>"
                                               data-name="callback"><?= GetMessage("S_CALLBACK") ?></span>
                                 </div>
@@ -107,10 +107,7 @@ $bPrintButton = (CPriority::GetFrontParametrValue('PRINT_BUTTON') == 'Y' ? true 
                                         <? CPriority::ShowHeaderPhones('white sm'); ?>
                                     </div>
                                     <div class="inline-block callback_wrap">
-                                            <span class="callback-block animate-load twosmallfont colored"
-                                                  data-event="jqm"
-                                                  data-param-id="<?= CPriority::getFormID("aspro_priority_callback"); ?>"
-                                                  data-name="callback">Пн. – Пт.: с 8:00 до 17:00</span>
+                                            <span class="callback-block animate-load twosmallfont colored" style="pointer-events: none">Пн. – Пт.: с 8:00 до 17:00</span>
                                     </div>
                                 </div>
                             </div>

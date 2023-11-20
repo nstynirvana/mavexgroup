@@ -103,15 +103,7 @@ if($arResult)
 	foreach ($arResult as &$arChild):
 		$uf_name = Array("UF_SHOW_LINK");
 		$code = explode("/", $arChild["LINK"]);
-		if ($code[1] == "services") {
-			$code = $code[2];
-			$uf_arresult = CIBlockSection::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => 34, "CODE" => $code), false, $uf_name);
-			if($uf_value = $uf_arresult->GetNext()):
-				if ($uf_value["UF_SHOW_LINK"] == 1) {
-					$arChild["UF_SHOW_LINK"] = 1;
-				}
-			endif;	
-		}elseif($code[1] == "product"){
+		if($code[1] == "product"){
 			$code = $code[2];
 			$uf_arresult = CIBlockSection::GetList(Array("SORT"=>"ASC"), Array("IBLOCK_ID" => 36, "CODE" => $code), false, $uf_name);
 			if($uf_value = $uf_arresult->GetNext()):
