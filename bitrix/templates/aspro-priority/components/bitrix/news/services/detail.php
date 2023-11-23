@@ -91,7 +91,9 @@ if($arElement)
 	?>
 <?endif;?>
 
-<div style="clear:both"></div>
+<div style="clear:both">
+</div>
+
 <?
 $bPositionMenu = $arTheme['SIDE_MENU']['VALUE'];
 $bShowLeftMenu = $arTheme['SERVICES_DETAIL_LEFT_BLOCK']['VALUE'] == 'Y';?>
