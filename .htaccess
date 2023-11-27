@@ -14,6 +14,8 @@ ErrorDocument 404 /404.php
   Options +FollowSymLinks
   RewriteEngine On
 
+  Redirect 301 /services/с/ https://mavexgroup.ru/services/aps/
+
   RewriteCond %{HTTPS} off
 
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
