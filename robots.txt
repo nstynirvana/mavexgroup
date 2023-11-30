@@ -18,3 +18,8 @@ Disallow: /*back_url=*
 Disallow: /*BACK_URL=*
 Disallow: /*back_url_admin=*
 Disallow: /*index.php$
+Disallow: /how-to-buy/guarantee.php
+Disallow: /how-to-buy/pay.php
+Disallow: /company/partners/
+Disallow: /company/vacancy/
+Disallow: /contacts/

@@ -19,17 +19,12 @@ ErrorDocument 404 /404.php
   RewriteCond %{HTTPS} off
 
   RewriteCond %{HTTP:X-Forwarded-Proto} !https
-  
+
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
   RewriteCond %{HTTP_HOST} ^www\.(.*)$
   RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
 
-  RewriteCond %{HTTP_HOST} ^www.mavexgroup.ru$ [NC]
-  RewriteRule ^(.*)$ http://mavexgroup.ru/$1 [R=301,L]
-
-
-			
 	# ASPRO_ROBOTS Serve robots.txt with robots.php only if the latter exists
 	RewriteCond %{REQUEST_FILENAME} robots.txt
 	RewriteCond %{DOCUMENT_ROOT}/robots.php -f

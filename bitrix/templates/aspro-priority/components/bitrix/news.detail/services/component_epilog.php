@@ -69,17 +69,17 @@ $bOrderViewBasket = $templateData["ORDER"];
 								<?$iTab = 0;?>
 								<?foreach($arTabOrder as $value):?>
 									<?//show desc block?>
-									<?if($value == "desc"):?>
+									<?/*if($value == "desc"):?>
 										<?if($bShowDetailTextTab):?>
 											<li class="border <?=(!($iTab++) ? 'active' : '')?>"><a href="#desc" data-toggle="tab"><?=($arParams["T_DESC"] ? $arParams["T_DESC"] : Loc::getMessage("T_DESC"));?></a></li>
 										<?endif;?>
-									<?endif;?>
+									<?endif;*/?>
 									<?//show char block?>
-									<?if($value == "char"):?>
+									<?/*if($value == "char"):?>
 										<?if($bShowPropsTab):?>
 											<li class="border <?=(!($iTab++) ? 'active' : '')?>"><a href="#props" data-toggle="tab"><?=($arParams["T_CHARACTERISTICS"] ? $arParams["T_CHARACTERISTICS"] : Loc::getMessage("T_CHARACTERISTICS"));?></a></li>
 										<?endif;?>
-									<?endif;?>
+									<?endif;*/?>
 									<?//show tarifs block?>
 									<?if($value == "tarifs"):?>
 										<?if($bShowTarifTab):?>
@@ -189,7 +189,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 												"PAGER_TEMPLATE" => ".default",
 												"DISPLAY_TOP_PAGER" => "N",
 												"DISPLAY_BOTTOM_PAGER" => "Y",
-												"PAGER_TITLE" => "Новости",
+												"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 												"PAGER_SHOW_ALWAYS" => "N",
 												"PAGER_DESC_NUMBERING" => "N",
 												"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -330,7 +330,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 												"PAGER_TEMPLATE" => ".default",
 												"DISPLAY_TOP_PAGER" => "N",
 												"DISPLAY_BOTTOM_PAGER" => "Y",
-												"PAGER_TITLE" => "Новости",
+												"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 												"PAGER_SHOW_ALWAYS" => "N",
 												"PAGER_DESC_NUMBERING" => "N",
 												"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -415,6 +415,9 @@ $bOrderViewBasket = $templateData["ORDER"];
 					<tr>
 						<td class="text_wrap col-md-<?=($bPrice ? 6 : 9);?> col-sm-8 col-xs-7 valign">
 							<div class="text">
+                                <?if(!empty($templateData['CHARACTERISTICS']['TEXT_FOR_PRICE']['VALUE'])):?>
+                                    <?=$templateData['CHARACTERISTICS']['TEXT_FOR_PRICE']['VALUE']?>.<br>
+                                <?endif;?>
 								<?$APPLICATION->IncludeComponent(
 									'bitrix:main.include',
 									'',
@@ -562,7 +565,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -631,7 +634,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 								"PAGER_TEMPLATE" => ".default",
 								"DISPLAY_TOP_PAGER" => "N",
 								"DISPLAY_BOTTOM_PAGER" => "Y",
-								"PAGER_TITLE" => "Новости",
+								"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 								"PAGER_SHOW_ALWAYS" => "N",
 								"PAGER_DESC_NUMBERING" => "N",
 								"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -765,7 +768,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => "main",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -837,7 +840,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -909,7 +912,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -977,7 +980,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -1044,7 +1047,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -1111,7 +1114,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
@@ -1176,7 +1179,7 @@ $bOrderViewBasket = $templateData["ORDER"];
 							"PAGER_TEMPLATE" => ".default",
 							"DISPLAY_TOP_PAGER" => "N",
 							"DISPLAY_BOTTOM_PAGER" => "Y",
-							"PAGER_TITLE" => "Новости",
+							"PAGER_TITLE" => "пїЅпїЅпїЅпїЅпїЅпїЅпїЅ",
 							"PAGER_SHOW_ALWAYS" => "N",
 							"PAGER_DESC_NUMBERING" => "N",
 							"PAGER_DESC_NUMBERING_CACHE_TIME" => "36000",
