@@ -78,7 +78,6 @@ $this->setFrameMode(true);
 										<?endif;?>
 										<?if($arProperty['VALUE']):?>
 											<div class="property">
-												<span class="title-prop"><?=$arProperty['NAME'];?></span>:
 												<span class="value"> <?=$val;?></span>
 											</div>
 										<?endif;?>

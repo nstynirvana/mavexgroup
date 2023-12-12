@@ -2,7 +2,7 @@
 $aMenuLinks = Array(
 	Array(
 		"Гарантия", 
-		"guarantee.php", 
+		"/how-to-buy/quarantee/",
 		Array(), 
 		Array(), 
 		"" 
@@ -17,7 +17,7 @@ $aMenuLinks = Array(
 	),*/
 	Array(
 		"Оплата", 
-		"pay.php", 
+		"/how-to-buy/pay/",
 		Array(), 
 		Array(), 
 		"" 

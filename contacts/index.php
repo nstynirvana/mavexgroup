@@ -1,7 +1,7 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Контакты");?>
 
-
+<?$APPLICATION->AddHeadString(' <meta name="robots" content="noindex, follow"/>',true)?>
 <?CPriority::ShowPageType('page_contacts');?>
 
 <style type="text/css">
