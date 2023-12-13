@@ -280,6 +280,17 @@ span.btn.button-call__in-header.callback-block.animate-load.twosmallfont.colored
 
 }
 
+.detail.vacancy .content .text p {
+    margin: 10px 0;
+}
+
+.detail.vacancy .content .text h4 {
+    margin: 20px 0 15px;
+}
+
+.detail.vacancy .content .text h4:first-child {
+    margin: 0 0 15px;
+}
 
 .slick-list.draggable {
     width: 100%;
