@@ -15,6 +15,8 @@ ErrorDocument 404 /404.php
   RewriteEngine On
 
   Redirect 301 /services/с/ https://mavexgroup.ru/services/aps/
+  Redirect 301 /product/ https://mavexgroup.ru/catalog/
+  Redirect 301 /services/cistema-okhrannoy-signalizatsii/ https://mavexgroup.ru/services/sistemy-okhrannoy-signalizatsii/
 
   RewriteCond %{HTTPS} off
 
