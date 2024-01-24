@@ -7,9 +7,11 @@ IncludeTemplateLangFile(__FILE__);
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title><?$APPLICATION->ShowTitle()?></title>
-	<link rel="shortcut icon" type="image/x-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico" />
-	
-	<link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/common.css" />
+    <link rel="icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="<?=SITE_TEMPLATE_PATH?>/favicon.svg" />
+    <link rel="apple-touch-icon" href="<?=SITE_TEMPLATE_PATH?>/favicon.png">  <!-- 180×180 -->
+
+    <link rel="stylesheet" type="text/css" href="<?=SITE_TEMPLATE_PATH?>/common.css" />
 	
 	<?$APPLICATION->ShowHead();?>
 	

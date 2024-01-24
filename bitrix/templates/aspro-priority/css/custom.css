@@ -88,9 +88,9 @@ a[href="/how-to-buy/"] {
     pointer-events: none !important;
 }
 
-a[href="/company/"] {
-    pointer-events: none !important;
-}
+/*a[href="/company/"] {*/
+/*    pointer-events: none !important;*/
+/*}*/
 
 .item_contact .title a {
     pointer-events: none !important;

@@ -2,6 +2,8 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Услуги");
 ?>
+<?$APPLICATION->AddHeadString(' <meta name="robots" content="index, follow"/>',true)?>
+
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
 	"services", 

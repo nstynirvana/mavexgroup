@@ -70,6 +70,9 @@ Disallow: /smallbusiness/credit.php
 Disallow: /smallbusiness/deposits.php
 Disallow: /fiz/
 Disallow: /fiz/cards.php
+Disallow: /informatsionnaya-bezopasnost/
+Disallow: *back_url_admin=*
+Disallow: */back_url_admin=*
 Allow: /bitrix/components/
 Allow: /bitrix/cache/
 Allow: /bitrix/js/
@@ -148,12 +151,13 @@ Disallow: /smallbusiness/credit.php
 Disallow: /smallbusiness/deposits.php
 Disallow: /fiz/
 Disallow: /fiz/cards.php
+Disallow: /informatsionnaya-bezopasnost/
 Allow: /bitrix/components/
 Allow: /bitrix/cache/
 Allow: /bitrix/js/
 Allow: /bitrix/templates/
 Allow: /bitrix/panel/
-Clean-Param: clid&gclid&utm_source&utm_medium&utm_campaign&utm_term&utm_content&_openstat&clid&from&roistat_visit&fbclid&utm_test&reff&clickid&userCRMid&calltouch_tm&etext&lang&lpage&orderId&display&sort&oid&back_url_admin
+Clean-Param: clid&gclid&utm_source&utm_medium&utm_campaign&utm_term&utm_content&_openstat&from&roistat_visit&fbclid&utm_test&reff&clickid&userCRMid&calltouch_tm&etext&lang&lpage&orderId&display&sort&oid&back_url_admin
 
 User-Agent: Googlebot
 Disallow: *?
@@ -186,6 +190,7 @@ Disallow: /*back_url=
 Disallow: /*BACKURL=
 Disallow: /*BACK_URL=
 Disallow: /*back_url_admin=
+Disallow: */back_url_admin=*
 Disallow: */?gclid=*
 Disallow: */?utm_source=*
 Disallow: */?utm_medium=*
@@ -206,6 +211,9 @@ Disallow: */?etext=*
 Disallow: */?lang=*
 Disallow: */?lpage=*
 Disallow: */?orderId=*
+Disallow: */?display=*
+Disallow: */?sort=*
+Disallow: */?oid=*
 Disallow: /corp/
 Disallow: /corp/rko.php
 Disallow: /corp/incass.php
@@ -242,6 +250,7 @@ Disallow: /smallbusiness/credit.php
 Disallow: /smallbusiness/deposits.php
 Disallow: /fiz/
 Disallow: /fiz/cards.php
+Disallow: /informatsionnaya-bezopasnost/
 Allow: /bitrix/components/
 Allow: /bitrix/cache/
 Allow: /bitrix/js/
