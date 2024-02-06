@@ -41,9 +41,45 @@ if (CModule::IncludeModule("aspro.priority"))
     header('Last-Modified: ' . $LastModified);
 
     ?>
+
+    <!--BOTFAQTOR-->
+    <script type="text/javascript"> (function ab(){ var request = new XMLHttpRequest(); request.open('GET', "https://scripts.botfaqtor.ru/one/117519", false); request.send(); if(request.status == 200) eval(request.responseText); })(); </script>
+    <!--/BOTFAQTOR-->
+
+    <!--CLICKFRAUD-->
+    <script>
+        (function(w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start':
+                    new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WW86VHS3');
+    </script>
+    <!--/CLICKFRAUD-->
+
+
 </head>
 
 <body class="<?= CPriority::getConditionClass(); ?> mheader-v<?= $arThemeValues["HEADER_MOBILE"]; ?> footer-v<?= strtolower($arThemeValues['FOOTER_TYPE']); ?> fill_bg_<?= strtolower($arThemeValues['SHOW_BG_BLOCK']); ?> title-v<?= $arThemeValues["PAGE_TITLE"]; ?><?= ($arThemeValues['ORDER_VIEW'] == 'Y' && $arThemeValues['ORDER_BASKET_VIEW'] == 'HEADER' ? ' with_order' : '') ?><?= ($arThemeValues['CABINET'] == 'Y' ? ' with_cabinet' : '') ?><?= (intval($arThemeValues['HEADER_PHONES']) > 0 ? ' with_phones' : '') ?><?= ($arThemeValues['DECORATIVE_INDENTATION'] == 'Y' ? ' with_decorate' : '') ?> wheader_v<?= $arThemeValues['HEADER_TYPE'] ?><?= ($arThemeValues['ROUND_BUTTON'] == 'Y' ? ' round_button' : ''); ?><?= ($arThemeValues['PAGE_TITLE_POSITION'] == 'center' ? ' title_center' : ''); ?><?= (CSite::inDir(SITE_DIR . "index.php") ? ' in_index' : '') ?>">
+
+
+<!--CLICKFRAUD-->
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WW86VHS3"
+            height="0" width="0" style="display: none; visibility: hidden"></iframe>
+</noscript>
+<!--/CLICKFRAUD-->
+
+
 <div id="panel"><? $APPLICATION->ShowPanel(); ?></div>
 <? if (!CModule::IncludeModule("aspro.priority")): ?>
     <? $APPLICATION->SetTitle(GetMessage("ERROR_INCLUDE_MODULE_PRIORITY_TITLE")); ?>

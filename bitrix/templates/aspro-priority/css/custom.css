@@ -300,3 +300,11 @@ span.btn.button-call__in-header.callback-block.animate-load.twosmallfont.colored
     display: flex;
     flex-direction: row;
 }
+
+.item-views.partners.within .items .item-wrap.count_3 .item .row .col-md-12{
+    min-height: 462px;
+}
+
+.item-views.partners.within .items .item-wrap.count_3 {
+    min-height: 542px;
+}
