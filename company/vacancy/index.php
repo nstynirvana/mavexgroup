@@ -2,7 +2,7 @@
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
 $APPLICATION->SetTitle("Вакансии");
 ?>
-<?$APPLICATION->AddHeadString(' <meta name="robots" content="noindex, nofollow"/>',true)?>
+<?$APPLICATION->AddHeadString(' <meta name="robots" content="noindex, follow"/>',true)?>
 
 <?$APPLICATION->IncludeComponent(
 	"bitrix:news", 
