@@ -14,10 +14,24 @@ ErrorDocument 404 /404.php
   Options +FollowSymLinks
   RewriteEngine On
 
+  RewriteRule ^index\.php$ / [R=301,L]
+  RewriteRule ^(.*)/index\.php$ /$1/ [R=301,L]
+
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$
+  RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
+  RewriteCond %{REQUEST_URI} ^/index.php(.*)
+  RewriteRule ^ / [L,R=301]
+
+  RewriteCond %{REQUEST_URI} ^(.*?)\/{2,}(.*?)$
+  RewriteRule . %1/%2 [L,R=301]
+  RewriteCond %{THE_REQUEST} //
+  RewriteRule .* /$0 [R=301,L]
+
 #  Redirect 301 /how-to-buy/ https://mavexgroup.ru/how-to-buy/pay/
   Redirect 301 /services/с/ https://mavexgroup.ru/services/aps/
   Redirect 301 /product/ https://mavexgroup.ru/catalog/
-  # Redirect 301 /index.php/contact/ https://mavexgroup.ru/contacts/
+ # Redirect 301 /index.php/contact/ https://mavexgroup.ru/
   Redirect 301 /services/cistema-okhrannoy-signalizatsii/ https://mavexgroup.ru/services/sistemy-okhrannoy-signalizatsii/
 
   RewriteCond %{HTTPS} off
@@ -26,8 +40,7 @@ ErrorDocument 404 /404.php
 
   RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  RewriteCond %{HTTP_HOST} ^www\.(.*)$
-  RewriteRule ^(.*)$ https://%1/$1 [L,R=301]
+
 
 RewriteCond %{THE_REQUEST} ^.*/company/index.php
 RewriteRule ^(.*)index.php$ https://%{HTTP_HOST}/$1 [R=301,L]

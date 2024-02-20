@@ -161,7 +161,7 @@
 										<?endif?>
 										<?if($bH1 && !$bShowH1):?>
 											<h1><?=$arItem['NAME'];?></h1>
-											<?$bShowH1 = true;?>
+											<?$bShowH1 = false;?>
 										<?elseif($bLinkOnName):?>
 											<a href="<?=$arItem['PROPERTIES']['LINKIMG']['VALUE']?>" class="title-link">
 												<div class="title"><?=htmlspecialchars_decode($arItem['NAME'])?></div>

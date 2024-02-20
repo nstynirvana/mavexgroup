@@ -1,6 +1,7 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Вакансии");
+$APPLICATION->SetTitle("Вакансии для трудоустройства в компанию — Мавекс Инжиниринг");
+$APPLICATION->SetPageProperty("description", "Познакомьтесь с актуальными вакансиями в компании Мавекс Инжиниринг. У нас открыты разнообразные возможности для карьерного роста в области безопасности и технологий. Присоединяйтесь к нашей дружной команде, где ценится творческий подход, профессионализм и стремление к инновациям.");
 ?>
 <?$APPLICATION->AddHeadString(' <meta name="robots" content="noindex, follow"/>',true)?>
 
